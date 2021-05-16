@@ -1,0 +1,49 @@
+.team {
+  background-color: #F5F4FA;
+  
+  &__list {
+    margin-top: calc(-1 * var(--advantages-gap));
+    margin-left: calc(-1 * var(--advantages-gap));
+
+    font-size: 16px;
+    line-height: 1.19;
+
+    @media screen and (min-width:768px) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__person-item {
+    
+    margin-left: var(--advantages-gap);
+    margin-top: var(--advantages-gap);
+
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    background-color: var(--primary-white-color);
+
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
+      flex-basis: calc(100% / 2 - var(--advantages-gap));
+    }
+
+    @media screen and (min-width: 1200px) {
+      flex-basis: calc(100% / 4 - var(--advantages-gap));
+    }
+  }
+  
+  &__person-name {
+    text-align: center;
+    font-weight: 500;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+
+  &__person-position {
+    text-align: center;
+    font-weight: 400;
+    color: var(--primary-grey-color);
+  }
+}

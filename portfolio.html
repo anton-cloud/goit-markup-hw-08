@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+            rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css" />
+    <link rel="stylesheet" href="./css/main.min.css">
+
+</head>
+
+<body>
+    <header class="page-header">
+       <div class="container page-header__container">
+            <nav class="site-nav page-header__site-nav list">
+                <a class="logo logo_color-dark" href="./index.html"><span class="logo__part">Web</span>Studio</a>
+                <ul class="menu page-header__menu list">
+                    <li class="menu__item">
+                        <a class="menu__link link " href="./index.html">Студия</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link link menu__link_current" href="./portfolio.html">Портфолио</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link link" href="#">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <button class="page-header__mobile-menu-btn" type="button" data-menu-button>
+              <svg class="page-header__mobile-menu-icon">
+                <use href="./images/symbol.svg#burger-icon"></use>
+              </svg>
+            </button>
+            <ul class="contacts list">
+              <li class="contacts__item">
+                <a class="contacts__link link" href="mailto:info@devstudio.com">
+                  <svg class="contacts__icon contacts__icon_email">
+                    <use href="./images/symbol.svg#envelope"></use>
+                      </svg> info@devstudio.com
+                </a>
+              </li>
+              <li class="contacts__item">
+                <a class="contacts__link link" href="tel:+380961111111">
+                  <svg class="contacts__icon contacts__icon_phone">
+                    <use href="./images/symbol.svg#smartphone"></use>
+                  </svg> +38 096 111 11 11</a>
+              </li>
+            </ul>
+            <div class="mobile-menu" data-menu>
+              <button class="mobile-menu__close" data-menu-close>
+                <svg class="mobile-menu__close-icon" width='40' height='40'>
+                  <use href="./images/symbol.svg#close_mobile"></use>
+                </svg>
+              </button>
+              <ul class="mobile-menu__list list">
+                <li class="mobile-menu__item ">
+                  <a class="mobile-menu__link link" href="./.html">Студия</a>
+                </li>
+                <li class="mobile-menu__item">
+                  <a class="mobile-menu__link link" href="./portfolio.html" >Портфолио</a>
+                </li>
+                <li class="mobile-menu__item">
+                  <a class="mobile-menu__link link" href="">Контакты</a>
+                </li>
+              </ul>
+              <div class="mobile-menu__wrapper">
+              <ul class="mobile-menu__contacts-list list">
+                <li class="mobile-menu__contacts-item">
+                  <a class="mobile-menu__tel link" href="tel:+380961111111">+38 096 111 11 11</a>
+                </li>
+                <li class="mobile-menu__contacts-item">
+                  <a class="mobile-menu__email link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                </li>
+              </ul>
+              <ul class="mobile-menu__social-list list">
+                <li class="mobile-menu__social-item">
+                  <a class="mobile-menu__social-link link" href="">Instagram</a>
+                </li>
+                <li class="mobile-menu__social-item">
+                  <a class="mobile-menu__social-link link" href="">Twitter</a>
+                </li>
+                <li class="mobile-menu__social-item">
+                  <a class="mobile-menu__social-link link" href="">Facebook</a>
+                </li>
+                <li class="mobile-menu__social-item">
+                  <a class="mobile-menu__social-link mobile-menu__social-link_not-after link" href="">LinkedIn</a>
+                </li>
+              </ul>
+            </div>   
+        </div> 
+      </div>        
+    </header>
+    <main>
+        <section class="portfolio section">
+          <div class="container">
+          <!-- <div class="container"> -->
+                <!-- <h1>Портфолио</h1> -->
+                <!-- <h2>Навигация</h2> -->
+                <ul class="filter list">
+                    <li class="filter__item"> 
+                        <button class="filter__button" type="button">Все</button>
+                    </li>
+                    <li class="filter__item">
+                        <button class="filter__button" type="button">Веб-сайты</button>
+                    </li>
+                    <li class="filter__item">
+                        <button class="filter__button" type="button">Приложения</button>
+                    </li>
+                    <li class="filter__item">
+                        <button class="filter__button" type="button">Дизайн</button>
+                    </li>
+                    <li class="filter__item">
+                        <button class="filter__button" type="button">Маркетинг</button>
+                    </li>
+                </ul>
+                <ul class="portfolio list">
+                    <li class="portfolio__item">
+                        <a tabindex="0" class="card">
+                          <div class="card__thumb">
+                            <picture class="card__picture">
+
+                              <source srcset="./images/portfolio_2/desctop/p1.webp 1x, ./images/portfolio_2/desctop/p1@2x.webp 2x" media="(min-width: 1200px)"
+                                type="image/webp">
+
+                              <source srcset="./images/portfolio_2/desctop/p1.jpg 1x, ./images/portfolio_2/desctop/p1@2x.jpg 2x" media="(min-width: 1200px)">
+
+                              <source srcset="./images/portfolio_2/tablet/p-tablet1.webp 1x, ./images/portfolio_2/tablet/p-tablet1@2x.webp 2x" media="(min-width: 768px)"
+                                type="image/webp">
+
+                              <source srcset="./images/portfolio_2/tablet/p-tablet1.jpg 1x, ./images/portfolio_2/tablet/p-tablet1@2x.jpg 2x" media="(min-width: 768px)">
+
+                              <source srcset="./images/portfolio_2/mobile/p-mobile1.webp 1x, ./images/portfolio_2/mobile/p-mobile1@2x.webp 2x" media="(min-width: 480px)"
+                                type="image/webp">
+                                
+                              <source srcset="./images/portfolio_2/mobile/p-mobile1.jpg 1x, ./images/portfolio_2/mobile/p-mobile1@2x.jpg 2x" media="(min-width: 480px)">
+
+                              <img class="card__img" src="#" alt="ноутбук с вкладкой">
+                            </picture>
+                                <div class="portfolio__actions">
+                                  <p class="portfolio__actions-text">
+                                    Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.
+                                  </p>
+                                </div>
+                           </div>
+                            <div class="card__content">
+                                <h3 class="portfolio__title">Технокряк</h3>
+                                <p class="portfolio__discription">Веб-сайт</p>
+                          </div>
+                        </a>
+                    </li>
+                        <li class="portfolio__item">
+                            <a tabindex="0" class="card">
+                            <div class="card__thumb">
+                              <picture class="card__picture">
+
+                              <source srcset="./images/portfolio_2/desctop/p2.webp 1x, ./images/portfolio_2/desctop/p2@2x.webp 2x" media="(min-width: 1200px)"
+                                type="image/webp">
+
+                              <source srcset="./images/portfolio_2/desctop/p2.jpg 1x, ./images/portfolio_2/desctop/p2@2x.jpg 2x" media="(min-width: 1200px)">
+
+                              <source srcset="./images/portfolio_2/tablet/p-tablet2.webp 1x, ./images/portfolio_2/tablet/p-tablet2@2x.webp 2x" media="(min-width: 768px)"
+                                type="image/webp">
+
+                              <source srcset="./images/portfolio_2/tablet/p-tablet2.jpg 1x, ./images/portfolio_2/tablet/p-tablet2@2x.jpg 2x" media="(min-width: 768px)">
+
+                              <source srcset="./images/portfolio_2/mobile/p-mobile2.webp 1x, ./images/portfolio_2/mobile/p-mobile2@2x.webp 2x" media="(min-width: 480px)"
+                                type="image/webp">
+                                
+                              <source srcset="./images/portfolio_2/mobile/p-mobile2.jpg 1x, ./images/portfolio_2/mobile/p-mobile2@2x.jpg 2x" media="(min-width: 480px)">
+
+                              <img class="card__img" src="#" alt="постер">
+                              </picture>
+                            </div>
+                            <div class="card__content">
+                                 <h3 class="portfolio__title">Постер New Orlean vs Golden Star</h3>
+                                 <p class="portfolio__discription">Дизайн</p> 
+                            </div>
+                            </a>
+                         </li>
+                        <li class="portfolio__item">
+                             <a tabindex="0" class="card">
+                             <div class="card__thumb">
+                                <picture class="card__picture">
+
+                              <source srcset="./images/portfolio_2/desctop/p3.webp 1x, ./images/portfolio_2/desctop/p3@2x.webp 2x" media="(min-width: 1200px)"
+                                type="image/webp">
+
+                              <source srcset="./images/portfolio_2/desctop/p3.jpg 1x, ./images/portfolio_2/desctop/p3@2x.jpg 2x" media="(min-width: 1200px)">
+
+                              <source srcset="./images/portfolio_2/tablet/p-tablet3.webp 1x, ./images/portfolio_2/tablet/p-tablet3@2x.webp 2x" media="(min-width: 768px)"
+                                type="image/webp">
+
+                              <source srcset="./images/portfolio_2/tablet/p-tablet3.jpg 1x, ./images/portfolio_2/tablet/p-tablet3@2x.jpg 2x" media="(min-width: 768px)">
+
+                              <source srcset="./images/portfolio_2/mobile/p-mobile3.webp 1x, ./images/portfolio_2/mobile/p-mobile3@2x.webp 2x" media="(min-width: 480px)"
+                                type="image/webp">
+                                
+                              <source srcset="./images/portfolio_2/mobile/p-mobile3.jpg 1x, ./images/portfolio_2/mobile/p-mobile3@2x.jpg 2x" media="(min-width: 480px)">
+
+                              <img class="card__img" src="#" alt="логотип ресторана">
+                                </picture>
+                             </div>
+                            <div class="card__content">
+                                <h3 class="portfolio__title">Ресторан Seafood</h3>
+                                <p class="portfolio__discription">Приложение</p>
+                            </div>
+                            </a>
+                        </li>
+                        <li class="portfolio__item">
+                            <a tabindex="0" class="card">
+                            <div class="card__thumb">
+                              <picture class="card__picture">
+
+                              <source srcset="./images/portfolio_2/desctop/p4.webp 1x, ./images/portfolio_2/desctop/p4@2x.webp 2x" media="(min-width: 1200px)"
+                                type="image/webp">
+
+                              <source srcset="./images/portfolio_2/desctop/p4.jpg 1x, ./images/portfolio_2/desctop/p4@2x.jpg 2x" media="(min-width: 1200px)">
+
+                              <source srcset="./images/portfolio_2/tablet/p-tablet4.webp 1x, ./images/portfolio_2/tablet/p-tablet4@2x.webp 2x" media="(min-width: 768px)"
+                                type="image/webp">
+
+                              <source srcset="./images/portfolio_2/tablet/p-tablet4.jpg 1x, ./images/portfolio_2/tablet/p-tablet4@2x.jpg 2x" media="(min-width: 768px)">
+
+                              <source srcset="./images/portfolio_2/mobile/p-mobile4.webp 1x, ./images/portfolio_2/mobile/p-mobile4@2x.webp 2x" media="(min-width: 480px)"
+                                type="image/webp">
+                                
+                              <source srcset="./images/portfolio_2/mobile/p-mobile4.jpg 1x, ./images/portfolio_2/mobile/p-mobile4@2x.jpg 2x" media="(min-width: 480px)">
+
+                              <img class="card__img" src="#" alt="наушники">
+                              </picture>
+
+                            </div>
+                            <div class="card__content">
+                                <h3 class="portfolio__title">Проект Prime</h3>
+                                <p class="portfolio__discription">Маркетинг</p>
+                            </div>
+                            </a>
+                        </li>
+                        <li class="portfolio__item">
+                            <a tabindex="0" class="card">
+                            <div class="card__thumb">
+                              <picture class="card__picture">
+
+                              <source srcset="./images/portfolio_2/desctop/p5.webp 1x, ./images/portfolio_2/desctop/p5@2x.webp 2x" media="(min-width: 1200px)"
+                                type="image/webp">
+
+                              <source srcset="./images/portfolio_2/desctop/p5.jpg 1x, ./images/portfolio_2/desctop/p5@2x.jpg 2x" media="(min-width: 1200px)">
+
+                              <source srcset="./images/portfolio_2/tablet/p-tablet5.webp 1x, ./images/portfolio_2/tablet/p-tablet5@2x.webp 2x" media="(min-width: 768px)"
+                                type="image/webp">
+
+                              <source srcset="./images/portfolio_2/tablet/p-tablet5.jpg 1x, ./images/portfolio_2/tablet/p-tablet5@2x.jpg 2x" media="(min-width: 768px)">
+
+                              <source srcset="./images/portfolio_2/mobile/p-mobile5.webp 1x, ./images/portfolio_2/mobile/p-mobile5@2x.webp 2x" media="(min-width: 480px)"
+                                type="image/webp">
+                                
+                              <source srcset="./images/portfolio_2/mobile/p-mobile5.jpg 1x, ./images/portfolio_2/mobile/p-mobile5@2x.jpg 2x" media="(min-width: 480px)">
+
+                              <img class="card__img" src="#" alt="две коробочки">
+                              </picture>
+                            </div>
+                            <div class="card__content">
+                                <h3 class="portfolio__title">Проект Boxes</h3>
+                                <p class="portfolio__discription">Приложение</p>
+                            </div>
+                            </a>
+                        </li>
+                         <li class="portfolio__item">
+                            <a tabindex="0" class="card">
+                            <div class="card__thumb">
+                              <picture class="card__picture">
+
+                              <source srcset="./images/portfolio_2/desctop/p6.webp 1x, ./images/portfolio_2/desctop/p6@2x.webp 2x" media="(min-width: 1200px)"
+                                type="image/webp">
+
+                              <source srcset="./images/portfolio_2/desctop/p6.jpg 1x, ./images/portfolio_2/desctop/p6@2x.jpg 2x" media="(min-width: 1200px)">
+
+                              <source srcset="./images/portfolio_2/tablet/p-tablet6.webp 1x, ./images/portfolio_2/tablet/p-tablet6@2x.webp 2x" media="(min-width: 768px)"
+                                type="image/webp">
+
+                              <source srcset="./images/portfolio_2/tablet/p-tablet6.jpg 1x, ./images/portfolio_2/tablet/p-tablet6@2x.jpg 2x" media="(min-width: 768px)">
+
+                              <source srcset="./images/portfolio_2/mobile/p-mobile6.webp 1x, ./images/portfolio_2/mobile/p-mobile6@2x.webp 2x" media="(min-width: 480px)"
+                                type="image/webp">
+                                
+                              <source srcset="./images/portfolio_2/mobile/p-mobile6.jpg 1x, ./images/portfolio_2/mobile/p-mobile6@2x.jpg 2x" media="(min-width: 480px)">
+
+                              <img class="card__img" src="#" alt="мотитор">
+                              </picture>
+                            </div>
+                            <div class="card__content">
+                                <h3 class="portfolio__title">Inspiration has no Borders</h3>
+                                 <p class="portfolio__discription">Веб-сайт</p>
+                            </div>
+                            </a>
+                        </li>
+                         <li class="portfolio__item">
+                            <a tabindex="0" class="card">
+                            <div class="card__thumb">
+                              <picture class="card__picture">
+
+                              <source srcset="./images/portfolio_2/desctop/p7.webp 1x, ./images/portfolio_2/desctop/p7@2x.webp 2x" media="(min-width: 1200px)"
+                                type="image/webp">
+
+                              <source srcset="./images/portfolio_2/desctop/p7.jpg 1x, ./images/portfolio_2/desctop/p7@2x.jpg 2x" media="(min-width: 1200px)">
+
+                              <source srcset="./images/portfolio_2/tablet/p-tablet7.webp 1x, ./images/portfolio_2/tablet/p-tablet7@2x.webp 2x" media="(min-width: 768px)"
+                                type="image/webp">
+
+                              <source srcset="./images/portfolio_2/tablet/p-tablet7.jpg 1x, ./images/portfolio_2/tablet/p-tablet7@2x.jpg 2x" media="(min-width: 768px)">
+
+                              <source srcset="./images/portfolio_2/mobile/p-mobile7.webp 1x, ./images/portfolio_2/mobile/p-mobile7@2x.webp 2x" media="(min-width: 480px)"
+                                type="image/webp">
+                                
+                              <source srcset="./images/portfolio_2/mobile/p-mobile7.jpg 1x, ./images/portfolio_2/mobile/p-mobile7@2x.jpg 2x" media="(min-width: 480px)">
+
+                              <img class="card__img" src="#" alt="открытый журнал">
+                              </picture>
+                            </div>
+                            <div class="card__content">
+                                <h3 class="portfolio__title">Издание Limited Editionт</h3>
+                                 <p class="portfolio__discription">Дизайн</p>
+                            </div>
+                            </a>
+                        </li>
+                         <li class="portfolio__item">
+                            <a tabindex="0" class="card">
+                            <div class="card__thumb">
+                              <picture class="card__picture">
+
+                              <source srcset="./images/portfolio_2/desctop/p8.webp 1x, ./images/portfolio_2/desctop/p8@2x.webp 2x" media="(min-width: 1200px)"
+                                type="image/webp">
+
+                              <source srcset="./images/portfolio_2/desctop/p8.jpg 1x, ./images/portfolio_2/desctop/p8@2x.jpg 2x" media="(min-width: 1200px)">
+
+                              <source srcset="./images/portfolio_2/tablet/p-tablet8.webp 1x, ./images/portfolio_2/tablet/p-tablet8@2x.webp 2x" media="(min-width: 768px)"
+                                type="image/webp">
+
+                              <source srcset="./images/portfolio_2/tablet/p-tablet8.jpg 1x, ./images/portfolio_2/tablet/p-tablet8@2x.jpg 2x" media="(min-width: 768px)">
+
+                              <source srcset="./images/portfolio_2/mobile/p-mobile8.webp 1x, ./images/portfolio_2/mobile/p-mobile8@2x.webp 2x" media="(min-width: 480px)"
+                                type="image/webp">
+                                
+                              <source srcset="./images/portfolio_2/mobile/p-mobile8.jpg 1x, ./images/portfolio_2/mobile/p-mobile8@2x.jpg 2x" media="(min-width: 480px)">
+
+                              <img class="card__img" src="#" alt="бирка">
+                              </picture>
+                            </div>
+                            <div class="card__content">
+                                <h3 class="portfolio__title">Проект LAB</h3>
+                                 <p class="portfolio__discription">Маркетинг</p>
+                            </div>
+                            </a>
+                        </li>
+                         <li class="portfolio__item">
+                            <a tabindex="0" class="card">
+                            <div class="card__thumb">
+                              <picture class="card__picture">
+
+                              <source srcset="./images/portfolio_2/desctop/p9.webp 1x, ./images/portfolio_2/desctop/p9@2x.webp 2x" media="(min-width: 1200px)"
+                                type="image/webp">
+
+                              <source srcset="./images/portfolio_2/desctop/p9.jpg 1x, ./images/portfolio_2/desctop/p9@2x.jpg 2x" media="(min-width: 1200px)">
+
+                              <source srcset="./images/portfolio_2/tablet/p-tablet9.webp 1x, ./images/portfolio_2/tablet/p-tablet9@2x.webp 2x" media="(min-width: 768px)"
+                                type="image/webp">
+
+                              <source srcset="./images/portfolio_2/tablet/p-tablet9.jpg 1x, ./images/portfolio_2/tablet/p-tablet9@2x.jpg 2x" media="(min-width: 768px)">
+
+                              <source srcset="./images/portfolio_2/mobile/p-mobile9.webp 1x, ./images/portfolio_2/mobile/p-mobile9@2x.webp 2x" media="(min-width: 480px)"
+                                type="image/webp">
+                                
+                              <source srcset="./images/portfolio_2/mobile/p-mobile9.jpg 1x, ./images/portfolio_2/mobile/p-mobile9@2x.jpg 2x" media="(min-width: 480px)">
+
+                              <img class="card__img" src="#" alt="ноутбук">
+                              </picture>
+                            </div>
+                            <div class="card__content">
+                                <h3 class="portfolio__title">Growing Business</h3>
+                                 <p class="portfolio__discription">Приложение</p>
+                            </div>
+                            </a>
+                        </li>
+                </ul>
+           </div>
+         </section>
+    </main>
+    <footer>
+        <div class="container">
+          <div class="footer-left mb">
+            <a class="logo logo_color-light" href="./index.html"> <span class="logo__part">Web</span>Studio</a>
+            <address class="address">
+                <p class="address__text">г. Киев, пр-т Леси Украинки, 26</p>
+                <a class="address__link" href="mailto:info@devstudio.com">info@devstudio.com</a> <br>
+                <a class="address__link" href="tel:+380991111111">+38 099 111 11 11</a>
+            </address>
+          </div>
+          <div class="action mb">
+              <p class="action_title footer-section-title">присоединяйтесь</p>
+              <ul class="social list">
+                <li class="social__item">
+                  <a class="social__link" href="https://www.instagram.com/">
+                    <svg class="social__icon social__icon_fill-white" width='20' height='20'>
+                      <use href="./images/symbol.svg#instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link" href="https://twitter.com">
+                     <svg class="social__icon social__icon_fill-white" width='20' height='20'>
+                      <use href="./images/symbol.svg#twitter"></use>
+                      </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link" href="https://www.facebook.com/">
+                    <svg class="social__icon social__icon_fill-white" width='20' height='20'>
+                      <use href="./images/symbol.svg#facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link" href="https://www.linkedin.com/">
+                    <svg class="social__icon social__icon_fill-white" width='20' height='20'>
+                        <use href="./images/symbol.svg#linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+          </div>
+          <div class="subscription">
+            <p class="subscription__title footer-section-title">Подпишитесь на рассылку</p>
+            <form class="subscription__form">
+              <div class="subscription__wrapper">
+                  <label class="subscription__form-field">
+                    <input class="subscription__form-input" name="user-subscription" type="text" placeholder="E-mail">
+                  </label>
+                  <button class="subscription__btn" type="submit">Подписаться
+                   <svg class="subscription__icon" width='24' height='24'>
+                    <use href="./images/symbol.svg#send"></use>
+                   </svg>
+                  </button>
+              </div>
+            </form>
+          </div>
+        </div>
+    </footer>
+    <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
+</body>
+
+</html>

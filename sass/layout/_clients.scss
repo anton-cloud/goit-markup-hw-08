@@ -1,0 +1,56 @@
+.clients {
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--advantages-gap));
+    margin-left: calc(-1 * var(--advantages-gap));
+  } 
+
+  &__item {
+    
+    flex-basis: calc(100% / 2 - var(--advantages-gap));
+   
+    margin-top: var(--advantages-gap);
+    margin-left: var(--advantages-gap);
+
+    @media screen and (min-width: 768px) {
+      flex-basis: calc(100% / 3 - var(--advantages-gap));
+    }
+
+    @media screen and (min-width: 1200px) {
+      flex-basis: calc(100% / 6 - var(--advantages-gap));
+    }
+  }
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 92px;
+    
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+	  &:hover,
+	  &:focus {
+  	  border: 1px solid var(--accent-color);
+  	  border-radius: 4px;
+  	  border-color: var(--accent-color);
+	  }
+
+    &:hover .clients__icon,
+	  &:focus .clients__icon {
+      fill: var(--accent-color);
+	  }
+  }
+
+  &__icon {
+    fill: var(--icons-color);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+
