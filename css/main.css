@@ -122,9 +122,9 @@ img {
   justify-content: space-between;
   top: 0;
   left: 50%;
-  width: 100vw;
+  width: 95vw;
   max-width: 480px;
-  height: 100vh;
+  height: 95vh;
   transform: translateX(-50%) translateY(-100%);
   padding: 48px 40px;
   background-color: var(--primary-white-color);
@@ -399,8 +399,8 @@ img {
   position: absolute;
   top: 50%;
   left: 50%;
-  min-width: 450px;
-  min-height: 610px;
+  overflow-y: scroll;
+  height: 95vh;
   background: #FFFFFF;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -410,7 +410,14 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (min-widt: 1200px) {
+@media screen and (min-width: 480px) {
+  .modal {
+    min-width: 450px;
+    max-height: 610px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
   .modal {
     min-width: 528px;
     min-height: 580px;
@@ -1175,7 +1182,7 @@ footer .container {
   cursor: pointer;
 }
 
-.portfolio {
+.portfolio__list {
   display: flex;
   flex-wrap: wrap;
   margin-left: calc(-1 * var(--advantages-gap));
