@@ -1145,6 +1145,7 @@ footer .container {
   .filter {
     flex-wrap: wrap;
     justify-content: start;
+    margin-bottom: 25px;
   }
 }
 
