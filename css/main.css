@@ -122,9 +122,8 @@ img {
   justify-content: space-between;
   top: 0;
   left: 50%;
-  width: 95vw;
-  max-width: 480px;
-  height: 95vh;
+  width: 100vw;
+  height: 100vh;
   transform: translateX(-50%) translateY(-100%);
   padding: 48px 40px;
   background-color: var(--primary-white-color);
@@ -278,7 +277,6 @@ img {
 .checkbox-area {
   margin-top: 20px;
   margin-bottom: 30px;
-  display: flex;
   justify-content: center;
   align-items: center;
   font-size: 12px;
