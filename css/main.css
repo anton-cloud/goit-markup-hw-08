@@ -1265,4 +1265,11 @@ footer .container {
 .card__content {
   padding: 20px 24px;
 }
+
+@media screen and (max-width: 479px) {
+  .portfolio__actions {
+    overflow-y: scroll;
+    font-size: 12px;
+  }
+}
 /*# sourceMappingURL=main.css.map */

@@ -106,7 +106,6 @@
     color: var(--primary-white-color);
   }
 
-
   &__title {
     font-size: 18px;
     font-weight: 700;
@@ -152,4 +151,9 @@
   }
 }
 
-
+  @media screen and (max-width: 479px) {
+    .portfolio__actions {
+      overflow-y: scroll;
+      font-size: 12px;
+    }
+  }
